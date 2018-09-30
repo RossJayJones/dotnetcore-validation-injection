@@ -11,7 +11,6 @@ namespace ValidationInjection.Validation
             _underlyingModelBinderProvider = underlyingModelBinderProvider;
         }
 
-
         public IModelBinder GetBinder(ModelBinderProviderContext context)
         {
             var underlyingModelBinderProvider = _underlyingModelBinderProvider.GetBinder(context);
